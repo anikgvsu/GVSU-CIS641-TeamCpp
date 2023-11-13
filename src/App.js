@@ -9,6 +9,7 @@ import {
 } from "react-native";
 
 import LandingScreen from "./screens/LandingScreen";
+import SignUpScreen from "./screens/SignUpScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import React, { useRef } from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -47,6 +48,11 @@ export default function App() {
             name="Home"
             component={LandingScreen}
             options={{ title: "Home" }}
+          />
+          <Stack.Screen
+            name="SignUp"
+            component={SignUpScreen}
+            options={{ title: "Sign Up" }}
           />
         </Stack.Navigator>
       </NavigationContainer>
