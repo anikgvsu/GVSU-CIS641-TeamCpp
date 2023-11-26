@@ -13,6 +13,7 @@ import SignUpScreen from "./screens/SignUpScreen";
 import LoginScreen from "./screens/LoginScreen";
 import EventListScreen from "./screens/EventListScreen";
 import EventDetailsScreen from "./screens/EventDetailsScreen";
+import EventAddScreen from "./screens/EventAddScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import React, { useRef } from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -71,6 +72,11 @@ export default function App() {
             name="EventDetails"
             component={EventDetailsScreen}
             options={{ title: "Event Details" }}
+          />
+          <Stack.Screen
+            name="EventAdd"
+            component={EventAddScreen}
+            options={{ title: "Add Event" }}
           />
         </Stack.Navigator>
       </NavigationContainer>
