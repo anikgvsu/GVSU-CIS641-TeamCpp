@@ -15,6 +15,7 @@ import EventListScreen from "./screens/EventListScreen";
 import EventDetailsScreen from "./screens/EventDetailsScreen";
 import EventAddScreen from "./screens/EventAddScreen";
 import RecipeScreen from "./screens/RecipeScreen";
+import MapScreen from "./screens/MapScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import React, { useRef } from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -83,6 +84,11 @@ export default function App() {
             name="Recipe"
             component={RecipeScreen}
             options={{ title: "Recipe" }}
+          />
+          <Stack.Screen
+            name="Map"
+            component={MapScreen}
+            options={{ title: "Location" }}
           />
         </Stack.Navigator>
       </NavigationContainer>
