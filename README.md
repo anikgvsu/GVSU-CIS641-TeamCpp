@@ -41,7 +41,7 @@ Update the `api_key.js` file with your API keys:
 export const maps_KEY = 'YOUR_GOOGLE_MAPS_KEY';
 
 // Spoonacular API Key
-export const apiKey = 'YOUR_SPOONCULAR_API_KEY';
+export const apiKey = 'YOUR_SPOONACULAR_API_KEY';
 ```
 
 Create a Firebase project and update the `fb-credentials.js` file with your Firebase project configuration:
