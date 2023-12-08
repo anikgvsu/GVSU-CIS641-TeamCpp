@@ -23,6 +23,7 @@ Your privacy is our priority. Buddy Bites aggregates guest dietary preferences, 
 Ensure you have the following tools and dependencies installed:
 
 * [Node.js](https://nodejs.org/)
+* [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [React Native](https://reactnative.dev/)
 * [Firebase](https://firebase.google.com/)
 * [Expo](https://expo.dev/)
@@ -75,6 +76,6 @@ const auth = getAuth(app);
 
 1. Clone the repository: `git clone https://github.com/anikgvsu/GVSU-CIS641-TeamCpp.git`
 2. Navigate to the project folder: `cd src`
-3. Install dependencies: `npm install`
+3. Install dependencies: `yarn install`
 4. Start the application: `expo start`
 5. Follow the Expo CLI instructions to run the app on an emulator or a physical device.
