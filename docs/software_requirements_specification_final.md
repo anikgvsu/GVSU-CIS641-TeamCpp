@@ -85,48 +85,83 @@ The Buddy Bites Software Requirements Specification (SRS) is a comprehensive doc
 
 ## Non-Functional Requirements
 
-### Cross-Platform Compatibility
-| ID | Requirement |
-| :-------------: | :----------: |
-| NFR1 | The application shall be compatible with both iOS and Android platforms, ensuring accessibility to a wide range of users. |
+### Performance and Reliability
 
-### Uptime and Reliability
 | ID | Requirement |
 | :-------------: | :----------: |
-| NFR2 | The application shall maintain a minimum uptime of 80%, guaranteeing reliable service to users. |
+| NFR1 | The application shall maintain a minimum uptime of 80%. |
+| NFR2 | The application shall respond to user interactions within 5 seconds. |
+| NFR3 | The application shall be optimized to handle concurrent user interactions. |
+| NFR4 | Performance testing shall be conducted regularly. |
+| NFR5 | User data, including event details, community interactions, and user profiles, shall be regularly backed up. |
 
-### User Data Privacy
-| ID | Requirement |
-| :-------------: | :----------: |
-| NFR3 | Individual allergy information of users shall remain confidential and shall never be disclosed to any other user or third party. Allergies from the guest list shall be aggregated and presented as a collective summary to the event host. |
+### Compatibility and Accessibility
 
-### Responsiveness
 | ID | Requirement |
 | :-------------: | :----------: |
-| NFR4 | The application shall respond to user interactions within 5 seconds. |
+| NFR6 | The application shall be compatible with iOS version 14 and above. |
+| NFR7 | The application shall be compatible with Android version 10 and above. |
+| NFR8 | The application shall ensure an accessible user experience for devices with screen sizes ranging from 4 inches to 6.5 inches. |
+| NFR9 | The application shall comply with WCAG 2.1 Level AA accessibility standards. |
+| NFR10 | Cross-platform compatibility shall be tested monthly using real devices representing the diversity of users. |
 
-### User Interface
-| ID | Requirement |
-| :-------------: | :----------: |
-| NFR5 | The application's user interface shall be intuitive and user-friendly, reducing the need for extensive user training. |
+### Privacy and Security
 
-### Concurrent Users
 | ID | Requirement |
 | :-------------: | :----------: |
-| NFR6 | The application shall be optimized to handle concurrent user interactions, guaranteeing responsiveness even during peak usage times. |
+| NFR11 | User allergy information shall never be shared with any other user or third party. |
+| NFR12 | Allergies from the guest list shall be aggregated and presented in a summary format to the event host, maintaining individual user privacy. |
+| NFR13 | The application shall implement end-to-end encryption to protect user data during transmission. |
+| NFR14 | Security audits and vulnerability assessments shall be conducted monthly to identify and address potential threats. |
+| NFR15 | User authentication shall be needed. |
 
-### Testing
-| ID | Requirement |
-| :-------------: | :----------: |
-| NFR7 | Performance testing shall be conducted regularly to identify and address potential bottlenecks and slowdowns. |
+### User Interface and Experience
 
-### Data Integrity
 | ID | Requirement |
 | :-------------: | :----------: |
-| NFR8 | User data, including event details, community interactions, and user profiles, shall be regularly backed up to ensure data integrity and recovery in case of data loss. |
+| NFR16 | Users shall accomplish all tasks with at most 5 clicks. |
+| NFR17 | The application's main screen shall load within 3 seconds. |
+| NFR18 | All interactive elements, including buttons and menus, shall respond to user input within 5 seconds. |
+| NFR19 | The user interface shall follow a color theme. |
+| NFR20 | Design elements, including buttons and icons, shall be consistent across all screens. |
+
+### Network and Connectivity
+
+| ID | Requirement |
+| :-------------: | :----------: |
+| NFR21 | The Maps API requests shall not exceed 100 KB of data. |
+| NFR22 | The Recipe API requests shall not exceed 50 KB of data. |
+| NFR23 | The application shall recover gracefully from network failures. |
+| NFR24 | Network requests shall be optimized to achieve a latency of less than 500 milliseconds. |
+| NFR25 | Regular network performance monitoring shall be conducted. |
 
 # Change Management Plan
-<!-- <Description of what this section is> -->
+
+To ensure the successful integration of the new application into the customer's business, a comprehensive plan addressing training, ecosystem integration, and issue resolution is crucial.
+
+## Training and Skill Development:
+A structured training program will be developed to cater to different user groups within the organization. This includes in-person workshops, virtual training sessions, and the creation of user-friendly online modules. Training materials will be tailored to the specific functionalities relevant to each user group, minimizing the learning curve and promoting swift adoption.
+
+## Integration within Ecosystem/Software:
+Collaboration with the customer's IT department is paramount for a seamless integration process. A thorough analysis of the existing software ecosystem will be conducted to identify potential integration points. APIs or connectors will be developed to ensure compatibility with current databases, security protocols, and other pertinent systems. Regular communication with IT teams will be maintained to address any emerging integration challenges promptly.
+
+## Change Management Team:
+Establishing a dedicated change management team is essential for guiding the integration process. This team, consisting of representatives from IT, end-users, and project management, will act as change ambassadors. Regular meetings will be conducted to assess progress, identify challenges, and adapt the integration strategy accordingly. This team will play a pivotal role in facilitating communication and addressing concerns.
+
+## Continuous Communication:
+Transparent and continuous communication is key to overcoming resistance and fostering a positive attitude toward the new application. A detailed communication plan will be developed, outlining key milestones, benefits, and anticipated challenges. Multiple channels, including emails, newsletters, and intranet announcements, will be utilized to disseminate information. Open forums and regular feedback sessions will be established to address concerns promptly.
+
+## Issue Resolution Mechanism:
+To ensure the swift resolution of issues, a centralized helpdesk or support system will be implemented. Users will have the means to report issues, and a categorization system will be in place based on severity. A knowledge base will be maintained, documenting known issues and their solutions for quick reference. Regular updates on issue resolution progress will be communicated to maintain transparency.
+
+## User Feedback Mechanism:
+Feedback is a valuable tool for improvement. Surveys, feedback forms, and regular feedback sessions will be implemented to collect user opinions on the application's usability and functionality. This feedback will be used to drive iterative updates and enhancements, ensuring that the application aligns with user expectations.
+
+## Performance Monitoring:
+To ensure optimal functionality, a robust performance monitoring system will be implemented. This involves monitoring tools to track application usage, response times, and system resource utilization. Periodic performance reviews will be conducted to identify potential bottlenecks or areas for optimization, ensuring a smooth and efficient user experience.
+
+## Celebrate Success and Recognize Adoption:
+Positive reinforcement is vital for successful integration. Success stories resulting from the application's use will be highlighted, and recognition and rewards will be provided to teams or individuals contributing to its adoption. This creates a positive narrative around the application's benefits, encouraging a culture of acceptance within the organization.
 
 # Traceability Links
 <!-- <Description of this section> -->
