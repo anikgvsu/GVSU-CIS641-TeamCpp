@@ -4,7 +4,11 @@ The Buddy Bites Software Requirements Specification (SRS) is a comprehensive doc
 
 # Software Requirements
 
+This section outlines the software requirements for the application, categorizing them into functional and non-functional requirements.
+
 ## Functional Requirements
+
+Functional requirements define the specific features and capabilities that the software must possess. These requirements are categorized based on different aspects of the application's functionality.
 
 ### User Registration
 
@@ -85,6 +89,8 @@ The Buddy Bites Software Requirements Specification (SRS) is a comprehensive doc
 
 ## Non-Functional Requirements
 
+Non-functional requirements define the characteristics and constraints that the software must adhere to. These requirements address aspects such as performance, compatibility, security, user experience, and more.
+
 ### Performance and Reliability
 
 | ID | Requirement |
@@ -93,7 +99,7 @@ The Buddy Bites Software Requirements Specification (SRS) is a comprehensive doc
 | NFR2 | The application shall respond to user interactions within 5 seconds. |
 | NFR3 | The application shall be optimized to handle concurrent user interactions. |
 | NFR4 | Performance testing shall be conducted regularly. |
-| NFR5 | User data, including event details, community interactions, and user profiles, shall be regularly backed up. |
+| NFR5 | Event details and user profiles data shall be regularly backed up. |
 
 ### Compatibility and Accessibility
 
@@ -137,7 +143,7 @@ The Buddy Bites Software Requirements Specification (SRS) is a comprehensive doc
 
 # Change Management Plan
 
-To ensure the successful integration of the new application into the customer's business, a comprehensive plan addressing training, ecosystem integration, and issue resolution is crucial.
+The Change Management Plan outlines the strategies and processes to ensure the smooth integration of the new application into the customer's business, emphasizing training, ecosystem integration, issue resolution, and user adoption.
 
 ## Training and Skill Development:
 A structured training program will be developed to cater to different user groups within the organization. This includes in-person workshops, virtual training sessions, and the creation of user-friendly online modules. Training materials will be tailored to the specific functionalities relevant to each user group, minimizing the learning curve and promoting swift adoption.
@@ -164,24 +170,63 @@ To ensure optimal functionality, a robust performance monitoring system will be 
 Positive reinforcement is vital for successful integration. Success stories resulting from the application's use will be highlighted, and recognition and rewards will be provided to teams or individuals contributing to its adoption. This creates a positive narrative around the application's benefits, encouraging a culture of acceptance within the organization.
 
 # Traceability Links
-<!-- <Description of this section> -->
+This section provides traceability links between different artifacts, including use cases, class diagrams, and activity diagrams, and their corresponding requirements.
 
 ## Use Case Diagram Traceability
+
 | Artifact ID | Artifact Name | Requirement ID |
 | :-------------: | :----------: | :----------: |
-| UseCase1 | Move Player | FR5 |
-| … | … | … |
+| UseCase1 | Create Event | FR12-21, NFR5, NFR16, NFR18-21 |
+| UseCase2 | Manage Event | FR27-31, NFR16, NFR18-20 |
+| UseCase3 | Invite Guests | FR22-26, NFR16, NFR18-20 |
+
+**Note:** We were unable to implement the following features, and thus, the corresponding use cases could not be accomplished:
+
+| Artifact ID | Artifact Name |
+| :-------------: | :----------: |
+| UseCase4 | Accept Invitation |
+| UseCase5 | Reject Invitation |
+| UseCase6 | Create Community |
+| UseCase7 | Invite Members |
+| UseCase8 | Accept Invitation |
+| UseCase9 | Reject Invitation |
+
+
 ## Class Diagram Traceability
 | Artifact Name | Requirement ID |
 | :-------------: |:----------: |
-| classPlayer | NFR3, FR5 |
-| … | … | … |
+| classEvent | FR12-16, FR27-33, NFR5, NFR16, NFR18-20 |
+| classUser | FR1-6, NFR11-12|
+| classRecipe | FR34-39, NFR22 |
+| classLocation | FR17-21, NFR21 |
+
+**Note:** We were unable to implement the following features, and thus, the corresponding classes could not be accomplished:
+
+| Artifact Name |
+| :-------------: |
+| classCommunity |
+| classHangout |
+
 ## Activity Diagram Traceability
-<!-- <In this case, it makes more sense (I think, feel free to disagree) to link to the file and to those requirements impacted> -->
+
 | Artifact ID | Artifact Name | Requirement ID |
 | :-------------: | :----------: | :----------: |
-| <filename> | Handle Player Input | FR1-5, NFR2 |
-| … | … | … |
+| [Crate Event Activity Diagram](https://github.com/anikgvsu/GVSU-CIS641-TeamCpp/blob/main/docs/Create%20Event%20Activity%20Diagram.pdf) | Create Event | FR12-21, NFR5, NFR16, NFR18-21 |
+
+**Note:** We were unable to implement the following features, and thus, the corresponding activity diagram could not be accomplished:
+
+| Artifact ID | Artifact Name |
+| :-------------: | :----------: |
+| [Crate Community Activity Diagram](https://github.com/anikgvsu/GVSU-CIS641-TeamCpp/blob/main/docs/Create%20Community%20Activity%20Diagram.pdf) | Create Community |
+
 # Software Artifacts
-<!-- <Describe the purpose of this section> -->
-* [I am a link](to_some_file.pdf)
+
+This section serves as a repository for important software artifacts created during the development lifecycle. Each artifact plays a distinct role in outlining project specifications, design components, and overall requirements. The purpose of these artifacts is to provide comprehensive documentation, aid in communication among team members, and serve as a reference for project stakeholders.
+
+* [Project Proposal](https://github.com/anikgvsu/GVSU-CIS641-TeamCpp/blob/main/docs/proposal-template.md)
+* [Use Case Diagrams](https://github.com/anikgvsu/GVSU-CIS641-TeamCpp/blob/main/docs/Use%20Case%20Diagrams.pdf)
+* [Activity Diagrams](https://github.com/anikgvsu/GVSU-CIS641-TeamCpp/blob/main/docs/Activity%20Diagrams.pdf)
+* [Class Diagram](https://github.com/anikgvsu/GVSU-CIS641-TeamCpp/blob/main/docs/Class%20Diagram.pdf)
+* [Object Diagram](https://github.com/anikgvsu/GVSU-CIS641-TeamCpp/blob/main/docs/Object%20Diagram.pdf)
+* [SRS Midterm](https://github.com/anikgvsu/GVSU-CIS641-TeamCpp/blob/main/docs/software_requirements_specification.md)
+* [SRS Final](https://github.com/anikgvsu/GVSU-CIS641-TeamCpp/blob/main/docs/software_requirements_specification_final.md)
